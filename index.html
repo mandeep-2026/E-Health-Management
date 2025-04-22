@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Health Management</title>
+    <link rel="stylesheet" href="a.css">
+</head>
+
+<body>
+    <header>
+        <h1>E-Health Management</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="contact.php">Contact Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><button onclick="login()">Login</button></li>
+                <li><button onclick="logout()">Logout</button></li>
+            </ul>
+        </nav>
+        <script>
+            function logout() {
+                // You can redirect to login or homepage after logout
+                alert("Logged out!");
+                window.location.href = "index.html"; // Example redirect
+            }
+
+            function login() {
+                // You can redirect to login or homepage after logout
+                window.location.href = "k.php"; // Example redirect
+            }
+        </script>
+    </header>
+
+    <center>
+        <img src="https://img.freepik.com/free-vector/people-walking-sitting-hospital-building-city-clinic-glass-exterior-flat-vector-illustration-medical-help-emergency-architecture-healthcare-concept_74855-10130.jpg" alt="Hospital Building" width="50%">
+    </center>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to E-Health Management</h2>
+            <p>A hospital is a healthcare institution that provides medical care, housing, and training for patients and health professionals. Hospitals offer various services, including:</p>
+            <ul>
+                <p>Diagnosis, treatment, and patient support</p>
+                <p>Emergency care and outpatient services</p>
+                <p>Rehabilitation and teaching programs</p>
+                <p>Medical research advancements</p>
+            </ul>
+            <img src="https://media.istockphoto.com/id/1174322666/photo/medical-professional-greets-patient-at-clinic.jpg?s=612x612&w=0&k=20&c=tHV2IcqtGPeA06tPI_XctVab5mrBtOm75QH86ptm0zo=" alt="Medical Professional" width="60%">
+        </section>
+
+        <section class="services">
+            <h2>Our Services</h2>
+            <div>
+                <img src="https://www.shutterstock.com/image-photo/stethoscope-on-patient-form-desk-260nw-243110167.jpg" alt="Stethoscope" style="display:inline-block;">
+                <img src="https://www.motherhoodindia.com/wp-content/uploads/2021/09/Contact-page-Book-an-Appointment_Mobile-banner_578X364-px-02.jpg" alt="Appointment Booking" style="display:inline-block; height:30%; width: 35%;">
+                <img src="https://chandanpharmacy.com/Content/img/medicine-online.jpg" alt="Online Medicine" style="display:inline-block; height:30%; width: 35%;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVuz6rb-VCrWdxi86RaC8Qh1RZqezAJpONFg&s" alt="Pharmacy Services" style="display:inline-block; height:30%; width: 35%;">
+            </div>
+        </section>
+
+        <div class="tag" style="text-align:center;">
+            <button style="padding: 20px; border-radius: 10px; background-color: rgb(0, 179, 255); color: black; width: 100px;">
+                <a href="patient.php" style="text-decoration: none; color: black;">Patient</a>
+            </button>
+            <button style="padding: 20px; border-radius: 5px; background-color: rgb(0, 179, 255); color: black; width: 150px;">
+                <a href="appointment.php" style="text-decoration: none; color: black;">Book Appointment</a>
+            </button>
+            <button style="padding: 20px; border-radius: 10px; background-color: rgb(0, 179, 255); color: black; width: 150px;">
+                <a href="medicine.php" style="text-decoration: none; color: black;">Buy Medication</a>
+            </button>
+            <button style="padding: 20px; border-radius: 10px; background-color: rgb(0, 179, 255); color: black; width: 150px;">
+                <a href="doctor.html" style="text-decoration: none; color: black;">Doctors</a>
+            </button>
+        </div>
+
+        <section class="why-choose">
+            <h2>Why Choose Our Hospital?</h2>
+            <center>
+                <img src="https://lh6.googleusercontent.com/proxy/PNPnfik6RTcuMhEOYyir1u9YLl2hbMMDWma0YTLBs0IMl-bBdhDzGb9JoDCRzsw6IH2r9QDbDOm7yiM" alt="Why Choose Us">
+            </center>
+            <p>We offer quality healthcare with state-of-the-art facilities, experienced doctors, advanced medical technology, and 24/7 emergency services.</p>
+        </section>
+
+        <section class="achievements">
+            <h2>Our Achievements</h2>
+            <img src="https://www.researchgate.net/publication/335083611/figure/fig2/AS:790138061860864@1565395002914/Achievements-of-Arabic-medicine-and-pharmacy-Pan-et-al-2014.jpg" alt="Healthcare Achievements" width="40%">
+            <p>Recognized for excellence in healthcare services and patient satisfaction, including eradicating diseases, developing new medicines and vaccines, and improving global health outcomes.</p>
+        </section>
+
+        <section id="about-us">
+            <h2>About Us</h2>
+            <p>We are committed to providing state-of-the-art healthcare and fostering trust through transparency, innovation, and professionalism.</p>
+            <img src="https://hhphospital.com/wp-content/uploads/2022/04/132271849067790530about.jpg" alt="About Us">
+        </section>
+
+        <section class="contact">
+            <h2>Contact Details</h2>
+            <p>Email: contact@ourhospital.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Address: Vivekanand Hospital near IT Chauraha</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Our Hospital. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
