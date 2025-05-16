@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Health Management</title>
+    <style>
+        /* Reset and base styles */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 10px;
+        }
+        
+        header {
+            background-color: #00b3ff;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+        }
+        
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            list-style: none;
+            padding: 10px 0;
+        }
+        
+        nav ul li {
+            margin: 5px 10px;
+        }
+        
+        nav ul li a,
+        nav ul li button {
+            text-decoration: none;
+            color: white;
+            background: none;
+            border: none;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        
+        nav ul li button:hover,
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        
+        main {
+            padding: 20px;
+        }
+        
+        section {
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            margin-bottom: 10px;
+            color: #00b3ff;
+        }
+        
+        ul p {
+            margin-left: 20px;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .services div {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+        
+        .services img {
+            flex: 1 1 150px;
+            max-width: 250px;
+        }
+        
+        .tag {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 30px 0;
+        }
+        
+        .tag button {
+            background-color: rgb(0, 179, 255);
+            color: black;
+            border: none;
+            padding: 15px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        
+        .tag a {
+            color: black;
+            text-decoration: none;
+            display: inline-block;
+            width: 100%;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f1f1f1;
+            margin-top: 40px;
+        }
+        /* Responsive styles */
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            .services div,
+            .tag {
+                flex-direction: column;
+            }
+            .services img {
+                max-width: 90%;
+            }
+            .tag button {
+                width: 80%;
+            }
+            section,
+            .contact,
+            .why-choose,
+            .achievements {
+                text-align: center;
+            }
+        }
+    </style>
+    <script>
+        function logout() {
+            alert("Logged out!");
+            window.location.href = "index.html";
+        }
+
+        function login() {
+            window.location.href = "k.php";
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>E-Health Management</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="contact.php">Contact Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><button onclick="login()">Login</button></li>
+                <li><button onclick="logout()">Logout</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <center>
+            <img src="https://img.freepik.com/free-vector/people-walking-sitting-hospital-building-city-clinic-glass-exterior-flat-vector-illustration-medical-help-emergency-architecture-healthcare-concept_74855-10130.jpg" alt="Hospital Building">
+        </center>
+
+        <section id="home">
+            <h2>Welcome to E-Health Management</h2>
+            <p>A hospital is a healthcare institution that provides medical care, housing, and training for patients and health professionals. Hospitals offer various services, including:</p>
+            <ul>
+                <p>Diagnosis, treatment, and patient support</p>
+                <p>Emergency care and outpatient services</p>
+                <p>Rehabilitation and teaching programs</p>
+                <p>Medical research advancements</p>
+            </ul>
+            <img src="https://media.istockphoto.com/id/1174322666/photo/medical-professional-greets-patient-at-clinic.jpg?s=612x612&w=0&k=20&c=tHV2IcqtGPeA06tPI_XctVab5mrBtOm75QH86ptm0zo=" alt="Medical Professional">
+        </section>
+
+        <section class="services">
+            <h2>Our Services</h2>
+            <div>
+                <img src="https://www.shutterstock.com/image-photo/stethoscope-on-patient-form-desk-260nw-243110167.jpg" alt="Stethoscope">
+                <img src="https://www.motherhoodindia.com/wp-content/uploads/2021/09/Contact-page-Book-an-Appointment_Mobile-banner_578X364-px-02.jpg" alt="Appointment Booking">
+                <img src="https://chandanpharmacy.com/Content/img/medicine-online.jpg" alt="Online Medicine">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVuz6rb-VCrWdxi86RaC8Qh1RZqezAJpONFg&s" alt="Pharmacy Services">
+            </div>
+        </section>
+
+        <div class="tag">
+            <button><a href="patient.php">Patient</a></button>
+            <button><a href="appointment.php">Book Appointment</a></button>
+            <button><a href="medicine.php">Buy Medication</a></button>
+            <button><a href="doctor.html">Doctors</a></button>
+        </div>
+
+        <section class="why-choose">
+            <h2>Why Choose Our Hospital?</h2>
+            <img src="https://lh6.googleusercontent.com/proxy/PNPnfik6RTcuMhEOYyir1u9YLl2hbMMDWma0YTLBs0IMl-bBdhDzGb9JoDCRzsw6IH2r9QDbDOm7yiM" alt="Why Choose Us">
+            <p>We offer quality healthcare with state-of-the-art facilities, experienced doctors, advanced medical technology, and 24/7 emergency services.</p>
+        </section>
+
+        <section class="achievements">
+            <h2>Our Achievements</h2>
+            <img src="https://www.researchgate.net/publication/335083611/figure/fig2/AS:790138061860864@1565395002914/Achievements-of-Arabic-medicine-and-pharmacy-Pan-et-al-2014.jpg" alt="Healthcare Achievements">
+            <p>Recognized for excellence in healthcare services and patient satisfaction, including eradicating diseases, developing new medicines and vaccines, and improving global health outcomes.</p>
+        </section>
+
+        <section id="about-us">
+            <h2>About Us</h2>
+            <p>We are committed to providing state-of-the-art healthcare and fostering trust through transparency, innovation, and professionalism.</p>
+            <img src="https://hhphospital.com/wp-content/uploads/2022/04/132271849067790530about.jpg" alt="About Us">
+        </section>
+
+        <section class="contact">
+            <h2>Contact Details</h2>
+            <p>Email: contact@ourhospital.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Address: Vivekanand Hospital near IT Chauraha</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Our Hospital. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
